@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='landing_page.css') }}"/>
+    <link rel="icon" href="../static/images/logo.png">
+    <title>Dictate - Saya Tech</title>
+</head>
+<body>
+    <!-- href="{{ url_for('privacy_policy') }}" 
+    <h1>Landing page</h1>
+    <a href="{{ url_for('privacy_policy') }}">Click</a>-->
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
+    <div class="background-image"></div>
+
+    <div class="row no-gutters">
+        <div class="col-md-6 no-gutters">
+            <div class="leftside">
+                <img src="../static/images/Silver_iPhone.png" alt="iPhone"/>
+            </div>
+        </div>
+        <div class="col-md-6 no-gutters">
+            <div class="rightside">
+                <img src="../static/images/Logo-Titile-2.png" alt="Logo-Titile" class="d-inline-block">
+                <a href='https://play.google.com/store/search?q=dictate&c=apps&hl=en'>
+                    <img class="play_store" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+                </a>
+            </div>
+        </div>
+        <div class="down">
+          <img src="../static/images/arrow.png" class="arrow_mark" alt="arrow"/>
+        </div>
+    </div>
+
+    <div class="features">
+        <h2 class="fade-in" >This app helps you to finish writing your notes quickly!</h2>
+        <div class="row no-gutters">
+
+            <div class="col-md-4 no-gutters fade-in">
+                <div class="OCR">
+                    <img src="../static/images/OCR.png" alt="OCR">
+                    <span>Our OCR feature extracts text from your document so that you can start writing instantly.</span>
+                </div>
+            </div>
+
+            <div class="col-md-4 no-gutters fade-in">
+                <div class="SAVE">
+                    <img src="../static/images/SAVE.png" alt="SAVE">
+                    <span>You can save your notes on our app! There's no need to scan your docs again and again</span>
+                </div>
+            </div>
+
+            <div class="col-md-4 no-gutters fade-in">
+                <div class="FEATURES">
+                    <img src="../static/images/FEATURES.png" alt="FEATURES">
+                    <span>There are a lot of other features available which you can discover while writing!</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="Screenshots">
+      <h2 class="fade-in" >Here are a few screenshots of the app</h2>
+      <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
+          <div class="col-12 col-sm-4 col-lg-3 Gallery_Phones fade-in">
+            <img src="../static/images/Screenshots/Home.png" data-target="#carouselExample" data-slide-to="0">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3 Gallery_Phones fade-in">
+            <img src="../static/images/Screenshots/Player.png" data-target="#carouselExample" data-slide-to="1">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3 Gallery_Phones fade-in">
+            <img src="../static/images/Screenshots/Recent.png" data-target="#carouselExample" data-slide-to="2">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3 Gallery_Phones fade-in">
+            <img src="../static/images/Screenshots/SpeedTest.png" data-target="#carouselExample" data-slide-to="3">
+          </div>
+        </div>
+     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+      
+            <div class="modal-body">
+              
+            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="../static/images/Screenshots/Home.png">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../static/images/Screenshots/Player.png">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../static/images/Screenshots/Home.png">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../static/images/Screenshots/SpeedTest.png">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+      <div class="Comments">
+
+        <p class="fade-in">Play Store User Reviews</p>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+            <div class="carousel-item active comments fade-in">
+                <p class="d-block w-100 Home">"Great app 👌👌 it helped me a lot in writing long notes"</p>
+            </div>
+
+            <div class="carousel-item comments">
+                <p class="d-block w-100 Player">"Perfect app. It does what is says. Very helpful and useful app. Easy and simple to use. Thanks for this. 💕"</p>
+            </div>
+
+            <div class="carousel-item comments">
+                <p class="d-block w-100 Recent">"Good app with nice user interface which makes the app easy to use"</p>
+            </div>
+
+            <div class="carousel-item comments">
+                <p class="d-block w-100 SpeedTest">"This is great OCR app where the app can dictate the document to you. It is great for my college projects."</p>
+            </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <hr>
+
+        <div class="privacy">
+          <a href="{{ url_for('privacy_policy') }}" class="pri_policy">Privacy Policy</a>
+          <a href="mailto:dictate.official@gmail.com" class="contact_us">Contact Us</a>
+        </div>
+
+        <p class="copyright">Copyright © 2021. All rights reserved.</p>
+
+      </div>
+
+      <script src="{{ url_for('static', filename='landing_page.js') }}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

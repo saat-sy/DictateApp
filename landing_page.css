@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+html, body{
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.down{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.down img{
+    height: 50px;
+}
+
+.background-image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.rightside{
+    height: 100vh;
+    width: 100%;
+}
+
+.leftside{
+    height: 0;
+}
+
+.leftside{
+    display: flex;
+}
+
+.leftside img{
+    height: 75%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    display: block;
+}
+
+.rightside{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+
+.rightside img{
+    width: 75%;
+}
+
+.rightside .play_store{
+    width: 25%;
+}
+
+
+.features{
+    height: 60%;
+    background: #38B2FF;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.features h2{
+    color: white;
+    font-size: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+.OCR{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px; 
+}
+
+.OCR img{
+    width: 175px;
+}
+
+.OCR span{
+    padding-top: 15px;
+    width: 70%;
+    font-size: 17px;
+    color: white;
+}
+
+.SAVE{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px; 
+}
+
+.SAVE img{
+    width: 175px;
+}
+
+.SAVE span{
+    padding-top: 15px;
+    width: 70%;
+    font-size: 17px;
+    color: white;
+}
+
+.FEATURES{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 50px; 
+}
+
+.FEATURES img{
+    width: 175px;
+}
+
+.FEATURES span{
+    padding-top: 15px;
+    width: 70%;
+    font-size: 17px;
+    color: white;
+}
+
+.Screenshots{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.Screenshots h2{
+    color: #38B2FF;
+    font-size: 30px;
+    padding-top: 70px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.Gallery_Phones img{
+    height: 500px;
+    padding-bottom: 20px;
+    padding-top: 70px;
+}
+
+.carousel{
+    padding-bottom: 10px;
+}
+
+.Comments{
+    background: #38B2FF;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 1px;
+}
+
+.Comments p{
+    padding: 20px;
+    color: white;
+}
+
+.comments{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.comments p{
+    font-size: 20px;
+    color: #fff;
+}
+
+.privacy{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+hr{
+    height: 1px;
+    width: 90%;
+    background-color: #fff;
+    border: none;
+}
+
+.copyright{
+    color: #fff;
+
+}
+
+.privacy a{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width:767px){
+    .leftside, .rightside{
+        height: 100vh;
+        width: 100%;
+    } 
+}
+
+@media screen and (max-width: 767px){
+    .leftside{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .rightside img{
+        width: 90%;
+    }
+    
+    .rightside .play_store{
+        width: 40%;
+    }
+
+    .OCR span{
+        width: 90%;
+    }
+
+    .SAVE span{
+        width: 90%;
+    }
+
+    .FEATURES span{
+        width: 90%;
+    }
+}
